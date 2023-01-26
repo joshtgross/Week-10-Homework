@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkOut App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+<br>
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Date Created</th>
+          <th>Workout type</th>
+          <th>Body part</th>
+          <th>Category/equipment</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="workout-table">
+    </table>
+    <div class="form-group">
+      <label for="startTime">Start Time</label>  
+      <input type="time" class="form-control" id="startTime">
+      <label for="endTime">End Time</label>  
+      <input type="time" class="form-control" id="endTime">
+      <label for="dateCreated">Date Created</label>  
+      <input type="date" class="form-control" id="dateCreated">
+      <label for="workoutType">Workout type:</label>
+      <input type="text" class="form-control" id="workoutType">
+      <label for="bodyPart">Body part:</label>
+      <input type="text" class="form-control" id="bodyPart">
+      <label for="category">Category/equipment:</label>
+      <input type="text" class="form-control" id="category">
+    </tbody>
+    </div>
+    <button class="btn btn-primary" id="add">Add Workout</button>
+  </div>
+      
+    
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index2.js"></script>
+</body>
+</html>
